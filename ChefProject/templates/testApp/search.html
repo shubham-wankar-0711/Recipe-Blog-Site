@@ -1,0 +1,174 @@
+{% extends 'testApp/base.html'%}
+{% load static %}
+{% load blog_tags %}
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block title_block %} Food Blog {% endblock %}
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+{% if searched %}
+
+{% block home_block %}
+
+<div class="d-flex flex-row">
+
+  {% for post in post_list %}
+
+  <div class="col-lg" id="b1">
+    <div class="jumbotron" id="j1" )">
+      <a href="{{ post.get_absolute_url }}" class="anchor">
+        <h1 class="display-4">{{post.title}}</h1>
+        <hr>
+      </a>
+      <!-- <p class="leads">BREAKFASTS February 10,2017</p> -->
+      <p class="leads">Published on {{ post.publish }} By {{ post.author|title }}</p>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="home1">
+  <div class="row">
+
+    <div class="col-sm" id="b3">
+      <div class="jumbotron" id="j3">
+        <a class="cata" href="/breakfast/">
+          <h1 class="fonts1">BREAKFAST</h1>
+        </a>
+        <hr class="style-two">
+        <p class="lead">Browse the selection of breakfast and brunch recipes to get you off to a great start for the day!</p>
+      </div>
+    </div>
+
+    <div class="col-sm" id="b4">
+      <div class="jumbotron" id='j4'>
+        <a class="cata" href="/lunch/">
+          <h1 class="fonts1">LUNCH'S</h1>
+        </a>
+        <hr class="style-two">
+        <p class="lead">From light pastas, salads, sandwiches and more, you will never go hungry at lunch time again!</p>
+      </div>
+    </div>
+
+    <div class="col-sm" id="b5">
+      <div class="jumbotron" id='j5'>
+        <a class="cata" href="/dinner/">
+          <h1 class="fonts1">DINNER'S</h1>
+        </a>
+        <hr class="style-two">
+        <p class="lead">Our dinner recipes feature dishes all across the world, you will find something to suite your tastes here!</p>
+      </div>
+    </div>
+
+    <div class="col-sm" id="b6">
+      <div class="jumbotron" id='j6'>
+        <a class="cata" href="/dessert/">
+          <h1 class="fonts1">DESSERT'S</h1>
+        </a>
+        <hr class="style-two">
+        <p class="lead">Take a look at our indulgent and delicious sweet treats that you will want to try again and again!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% endif %}
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block content_block %}
+
+{% for post in post_list %}
+<!--
+      {% if tag %}
+          <h2>Posts related to {{tag.name}} Tag</h2>
+      {%  endif %} -->
+
+
+<img class="img1" src="/media/{{post.image}}" alt=""><br><br><br>
+<!-- <h1>{{post.title}}</h1><hr class="style-two"> -->
+<a href="{{ post.get_absolute_url }}" class="anchor">
+  <h1 class="display-4">{{post.title}}</h1>
+</a>
+<hr class="hr2">
+<p>{{post.category}} , {{post.publish}} by {{post.author|title}}</p>
+
+<p class="tagp">Tags:&nbsp&nbsp{% for tag in post.tags.all %}
+  <a id="taga" href="{% url 'tag_view' tag.slug %}" class="btn btn-info">{{tag.name|title}}</a>
+  {% endfor %}
+</p>
+
+<!-- <p>Wafer caramels pie. Biscuit cupcake dessert apple pie dessert muffin tootsie roll. Jelly danish candy icing jelly cotton candy. Cotton candy toffee jujubes danish marshmallow bear claw donut tart lollipop. Marshmallow apple pie candy caramels. Soufflé caramels caramels donut powder macaroon. Jelly beans cupcake toffee soufflé jelly wafer cake. Gummi bears gingerbread pie. Croissant chocolate cake danish. Chupa chups jelly beans bear claw dragée biscuit.</p> -->
+<!-- <p>Wafer caramels pie. Biscuit cupcake dessert apple pie dessert muffin tootsie roll. Jelly danish candy icing jelly cotton candy. Cotton candy toffee jujubes danish marshmallow bear claw donut tart lollipop. Marshmallow apple pie candy caramels. Soufflé caramels caramels donut powder macaroon. Jelly beans cupcake toffee soufflé jelly wafer cake. Gummi bears gingerbread pie. Croissant chocolate cake danish. Chupa chups jelly beans bear claw dragée biscuit.</p> -->
+<p>{{post.body|truncatewords:30}}</p>
+<a href="{{ post.get_absolute_url }}">
+  <h3>Continue Reading</h3>
+</a><br>
+<hr class="hr3"><br>
+
+
+{% endfor %}
+
+{% include 'testApp/pagination.html' with page=post_list%}
+
+<div class="container" align='center'>
+  <a href="/add" class="btn btn-warning btn-lg" id="add">Click Here To Add Your Recipe's</a>
+</div>
+
+{% endblock %}
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block sidebar_block %}
+
+<img class="img2" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29va2luZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt=""><br><br><br>
+<h3>MEET THE CHEF'S</h3>
+<p>We are Christy and Adam and we are passionate about food and cooking. This is our blog where we share our love for all things food and even showcase some of our favourite home-cooked recipes.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lo</p>
+
+<br>
+<hr>
+
+<h5 class="lh5">LATEST RECIPES</h5>
+<hr><br>
+{% show_latest_posts %}<br>
+<hr>
+
+<h5 class="lh5">MOST COMMENTED POSTS</h5>
+<hr><br>
+
+{% get_most_commented_posts as most_commented_posts %}
+
+{% for post in most_commented_posts %}
+<div class="latest">
+  <div class="row">
+    <div class="col-sm" id="ldiv1">
+      <img class="limg" src="/media/{{post.image}}" alt="">
+    </div>
+
+    <div class="col-sm" id="ldiv2">
+      <a class="latesta" href="{{ post.get_absolute_url }}">
+        <h5 class="lh6">{{post.title}}</h5>
+        <hr class="lhr">
+
+      </a>
+      <!-- <h5 class="lh6">{{post.title}}</h5> -->
+      <!-- <hr class="lhr"> -->
+      <p class="lpublish">{{post.publish}}</p>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->

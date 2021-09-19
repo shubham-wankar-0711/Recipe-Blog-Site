@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chef's.com</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Rye&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'css/home.css'%}">
+</head>
+
+<body class="hb">
+
+  <div class="head">
+
+    <div class="top">
+      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <header>
+      <!--- Navbar --->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/"><i class="fa fa-graduation-cap fa-lg mr-2"></i>Chef's.com</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nvbCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item pl-1">
+                <a class="nav-link" href="/about"><i class="fa fa-info-circle fa-fw mr-1"></i>ABOUT US</a>
+              </li>
+              <li class="nav-item pl-1">
+                <a class="nav-link" href="/contact"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>CONTACT US</a>
+              </li>
+              <li class="nav-item pl-1">
+                <a class="nav-link" href="/accounts/login"><i class="fa fa-sign-in-alt mr-1"></i>LOGIN</a>
+              </li>
+              <li class="nav-item pl-1">
+                <a class="nav-link" href="/signup"><i class="fa fa-user-plus fa-fw mr-1"></i>SIGN UP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--# Navbar #-->
+    </header>
+
+    {% block main_block %}
+
+
+
+    {% endblock %}
+
+    <!--- Footer --->
+    <footer>
+      <div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-light text-center">
+                  <h5 class="card-title text-white display-4" style="font-size:30px">Rights</h5>
+                  <p class="d-inline lead">AxiomThemes © 2021. <br> All Rights Reserved.<br>
+                    <a href="#" class="text-light d-block lead">Blog</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-white display-4" style="font-size:30px">Contact Us</h5>
+                  <a class="text-light d-block lead" style="margin-left: -20px" href="#"><i class="fa fa-phone mr-2"></i>+90 (000) 000 0 000</a>
+                  <a class="text-light d-block lead" href="#"><i class="fa fa-envelope mr-2"></i>admin@localhost.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-center">
+                  <h5 id="fname" class="card-title text-white display-4" style="font-size:30px">Shubham Wankar</h5>
+
+                  <a class="text-light" href="#"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+
+                  <a class="text-light" href="#"><i class="fa fa-twitter-square fa-fw fa-2x"></i></a>
+
+                  <a class="text-light" href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+
+                  <a class="text-light" href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--# Footer #-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>

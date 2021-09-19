@@ -1,0 +1,28 @@
+<!-- {% for post in latest_posts %}
+<a href="{{ post.get_absolute_url }}">
+  <h5>{{post.title}}</h5>
+  <hr>
+</a>
+<h6>{{post.publish}}</h6><br>
+{% endfor %}
+<hr><br><br><br> -->
+
+{% for post in latest_posts %}
+
+<div class="latest">
+  <div class="row">
+    <div class="col-sm" id="ldiv1">
+      <img class="limg" src="/media/{{post.image}}" alt="">
+    </div>
+
+    <div class="col-sm" id="ldiv2">
+      <a class="latesta" href="{{ post.get_absolute_url }}">
+        <h5 class="lh6">{{post.title}}</h5>
+        <hr class="lhr">
+      </a>
+      <p class="lpublish">{{post.publish}}</p>
+    </div>
+  </div>
+</div>
+
+{%endfor%}

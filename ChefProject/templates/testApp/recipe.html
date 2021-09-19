@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% extends 'testApp/base.html' %}
+
+{% block home_block %}
+
+<div id="" class="container" align='center'>
+
+  <div id="rj" class="jumbotron">
+    <h1 class="rh1">Add Your Recipe's Here !!!</h1>
+    <hr class="rhr1">
+
+    <form enctype="multipart/form-data" method="post">
+
+      <table class="rt">
+
+        {{form.as_table}}
+        {% csrf_token %}
+
+      </table>
+
+      <td><input id="btns" type="submit" class="btn btn-success btn-lg" value="ADD RECIPE"></td>
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

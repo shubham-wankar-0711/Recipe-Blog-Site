@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<style media="screen">
+  #j {
+    background-color: rgba(127, 191, 63, 0.1);
+    margin-top: 50px;
+  }
+
+  #d {
+    margin-left: 535px;
+    padding-top: 200px;
+  }
+</style>
+
+{% extends 'testApp/base.html' %}
+
+{% block home_block %}
+
+
+
+<div id="j" class="jumbotron">
+  <div id="out" class="container" align='center'>
+    <h1>Thanks for login into our website....!!!</h1>
+    <h3>
+      <p>Come back soon....</p>
+    </h3>
+    <h2>Click Here to Login: </h2> <a href="/accounts/login" class="btn btn-success btn-lg">Login</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,685 @@
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.hd {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hd .navbar-brand {
+  /* font-family: 'Cedarville Cursive', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Lemon', cursive;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
+.chef {
+  color: rgb(199, 171, 29);
+}
+
+.com {
+  color: black;
+}
+
+#cn {
+  text-align: center;
+  width: 60%;
+  line-height: 80px;
+  /* padding-left: 10px; */
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+  margin-left: 61px;
+}
+
+#cl {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: rgba(38, 38, 12, 0.8);
+}
+
+.nav-link {
+  margin-right: 25px;
+}
+
+.nav-link:hover {
+  font-size: 14px;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  margin-top: -20px;
+  margin-bottom: -35px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+.flex-row {
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  margin-top: 20px;
+}
+
+#b1 {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.2), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/4551521/pexels-photo-4551521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  height: 600px;
+  width: 100%;
+  padding-top: 200px;
+  margin-left: 20px;
+  margin-right: 15px;
+  border: 3px solid black;
+  /* padding-left: 2px; */
+  /* padding-right:5px; */
+}
+
+#j1 {
+  background-color: rgba(226, 226, 38, 0);
+  font-family: 'Pacifico', cursive;
+  color: floralwhite;
+  /* padding-top: 280px; */
+  /* padding-left: 80px; */
+  padding: 130px;
+  padding-left: 150px;
+  text-align: center;
+}
+
+#j1 a:hover {
+  text-decoration: none;
+  color: rgb(160, 221, 100);
+}
+
+#b1 .display-4 {
+  font-size: 44px;
+}
+
+.content .display-4 {
+  font-size: 35px;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+
+.content .anchor {
+  color: rgb(176, 22, 22);
+  font-family: 'Carter One', cursive;
+}
+
+.content h1 {
+  color: coral;
+  font-family: 'Carter One', cursive;
+}
+
+.content .style-two {
+  margin-right: 650px;
+}
+
+.sidebar .h3 {
+  color: grey;
+}
+
+/* #b2{
+  background-image:radial-gradient(rgba(46,45,45, 0),rgba(0, 0, 0, 0.7)), url("https://i1.wp.com/healey.sculptureqode.com/wp-content/uploads/2017/02/Granola-Porridge-with-syrup-1.jpg?fit=1440%2C1152&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10%;
+  height: 600px;
+  width: 100%;
+  padding-top: 300px;
+}
+#j2{
+  background-color: rgba(226, 226, 38, 0);
+  font-family: 'Pacifico', cursive;
+  color: snow;
+  padding-top: 130px;
+  padding-left: 85px;
+} */
+.col-lg {
+  margin-left: 30px;
+  padding: 320px;
+}
+
+.home1 {
+  margin-top: 5px;
+  padding: 90px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+#b3 {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.1)), url("https://healey.sculptureqode.com/wp-content/uploads/2017/02/Freshly-baked-Croissants-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5%;
+  height: 500px;
+  border: 3px solid black;
+}
+
+#j3 {
+  background-color: rgba(226, 226, 38, 0);
+  font-family: 'Handlee', cursive;
+  font-size: 1px;
+  color: floralwhite;
+  padding-top: 190px;
+}
+
+#b4 {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.1)), url("https://healey.sculptureqode.com/wp-content/uploads/2017/02/gg5-k-mjwuq-eaters-collective.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5%;
+  height: 500px;
+  border: 3px solid black;
+}
+
+#j4 {
+  background-color: rgba(226, 226, 38, 0);
+  font-family: 'Handlee', cursive;
+  color: floralwhite;
+  padding-top: 190px;
+}
+
+#b5 {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.1)), url("https://healey.sculptureqode.com/wp-content/uploads/2017/02/Chilli-beef-Gratan-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5%;
+  height: 500px;
+  padding-top: 163px;
+  border: 3px solid black;
+}
+
+#j5 {
+  background-color: rgba(226, 226, 38, 0);
+  font-family: 'Handlee', cursive;
+  color: floralwhite;
+  padding-top: 76px;
+}
+
+#b6 {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.1)), url("https://healey.sculptureqode.com/wp-content/uploads/2017/02/toffee-meringue-sponge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5%;
+  height: 500px;
+  border: 3px solid black;
+}
+
+#j6 {
+  background-color: rgba(226, 226, 38, 0);
+  font-family: 'Handlee', cursive;
+  color: floralwhite;
+  padding-top: 190px;
+}
+
+.col-sm {
+  margin-left: 5px;
+  padding: 50px;
+  height: 400px;
+  font-size: 40px;
+}
+
+.lead {
+  text-align: left;
+  float: left;
+  padding-top: -1px;
+  font-size: 10px;
+}
+
+.leads {
+  font-family: 'Handlee', cursive;
+  font-size: 20px;
+}
+
+hr.style-two {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(226, 226, 38, 0.8), rgba(226, 226, 38, 0.8), rgba(226, 226, 38, 0.8));
+}
+
+.jumbotron .fonts1 {
+  font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.content {
+  width: 68%;
+  float: left;
+  padding-left: 50px;
+  padding-right: 60px;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+.content .p_content {
+  font-style: italic;
+}
+
+.sidebar {
+  width: 32%;
+  float: right;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+.img1 {
+  height: 550px;
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.img2 {
+  height: 300px;
+  width: 100%;
+  padding-right: 0px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.jumbotron .anchor {
+  color: floralwhite;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+#j_detail {
+  background-color: lightgoldenrodyellow;
+}
+
+#j_detail h1 {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  text-align: center;
+  /* border-bottom: 2px solid coral; */
+  font-family: 'Carter One', cursive;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+#j_detail p {
+  text-align: center;
+  font-size: 23px;
+}
+
+.hr1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid red;
+  margin-left: 470px;
+  margin-right: 470px;
+}
+
+.hr2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 3px solid green;
+  margin-right: 575px;
+}
+
+.content h3 {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+}
+
+.hr3 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h3 {
+  color: rgba(158, 167, 159, 0.85);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.paginator .previous .ap {
+  float: left;
+  font-size: 25px;
+  font-family: 'Carter One', cursive;
+  /* border-bottom: 2px solid brown;   */
+}
+
+.paginator .next .an {
+  float: right;
+  font-size: 25px;
+  font-family: 'Carter One', cursive;
+  /* border-bottom: 2px solid brown; */
+}
+
+.phr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(75, 250, 93, 0), rgba(75, 250, 93, 0.99), rgba(75, 250, 93, 0));
+}
+
+.nhr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(75, 250, 93, 0), rgba(75, 250, 93, 0.99), rgba(75, 250, 93, 0));
+}
+
+.paginator {
+  margin-bottom: 130px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.mailh1 {
+  text-align: center;
+  margin-top: 30px;
+  color: coral;
+  padding-left: 100px;
+}
+
+.mailtable {
+  margin-left: 550px;
+  border: 1px solid rgba(75, 250, 93);
+  padding-left: 500px;
+}
+
+td {
+  padding: 7px 5px;
+  padding-left: : 100px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  margin-left: 20px;
+}
+
+#mailbtn {
+  margin-left: 700px;
+  margin-bottom: 20px;
+}
+
+#maila {
+  margin-left: 350px;
+  margin-bottom: 30px;
+  font-family: 'Carter One', cursive;
+}
+
+.mail {
+  border: 2px solid grey;
+  padding-left: 0px;
+  font-family: 'Carter One', cursive;
+}
+
+.mailh2 {
+  text-align: center;
+  margin-top: 200px;
+  color: coral;
+  /* padding-left: 100px; */
+}
+
+.mailh3 {
+  text-align: center;
+  /* margin-top: 200px; */
+  color: coral;
+  /* padding-left: 100px; */
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#ch9 {
+  font-size: 25px;
+  margin-top: 60PX;
+  color: indigo;
+  margin-left: 20px;
+}
+
+.ch2 {
+  margin-left: 20px;
+  color: coral;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cp2 {
+  margin-left: 20px;
+}
+
+#cbtn {
+  margin-left: 100px;
+  margin-bottom: 50px;
+  font-family: 'Carter One', cursive;
+  color: black;
+}
+
+.cb {
+  margin-left: 20px;
+}
+
+.cp1 {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: 'Carter One', cursive;
+  color: rgba(9, 10, 9, 0.67);
+  font-weight: bolder;
+}
+
+.chr1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 3px solid green;
+  margin-right: 575px;
+  margin-left: 20px;
+}
+
+#taga {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.tagp {
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.limg {
+  height: 130px;
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#ldiv1 {
+  padding: 0px;
+  margin-left: 12px;
+  margin-right: 0px;
+}
+
+#ldiv2 {
+  padding: 0px;
+  float: left;
+  margin-left: -100px;
+  margin-top: 10px;
+}
+
+#ldiv2 a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#lside {
+  margin-left: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#lh3 {
+  padding-left: 10px;
+  margin-left: 0px;
+}
+
+.lh5 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lh6 {
+  font-weight: 300;
+}
+
+.lhr {
+  border-bottom: 2px solid green;
+  margin-right: 140px;
+}
+
+.lpublish {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.latest {
+  margin-bottom: -250px;
+}
+
+.latesta {
+  color: black;
+  font-weight: 300;
+}
+
+.sh5 {
+  margin-left: -250px;
+}
+
+.shr1 {
+  border-bottom: 2px solid coral;
+  margin-right: 650px;
+  margin-left: -250px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.cata {
+  color: floralwhite;
+}
+
+.cata:hover {
+  color: floralwhite;
+  text-decoration: none;
+  color: yellow;
+  font-size: 600px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#add {
+  margin-left: 500px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 30px;
+  font-family: 'Carter One', cursive;
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#js {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  color: floralwhite;
+  font-size: 18px;
+}
+
+table,
+td {
+  margin-left: 160px;
+  padding-top: 20px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+#btns {
+  margin-top: 20px;
+}
+
+.rt {
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+#rj {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.6), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1506458539166-34079f9e1d2c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=353&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fdff7c;
+}
+
+.bd {
+  background-color: lightgoldenrodyellow;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.ctable {
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#j {
+  background-image: radial-gradient(rgba(46, 45, 45, 0.3), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  color: floralwhite;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 250px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  margin-top: 25px;
+}
+
+.rh1 {
+  font-family: 'Carter One', cursive;
+}
+
+.rhr1 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(244, 34, 34, 0), rgba(244, 265, 65, 0.75), rgba(0, 0, 0, 0));
+}
+
+#mains #lc {
+  border-radius: 100px;
+}
+
+#j #out {
+  margin-top: 120px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */

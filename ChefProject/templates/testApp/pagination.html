@@ -1,0 +1,25 @@
+<div class="paginator">
+
+  <span class="previous">
+
+    {% if page.has_previous %}
+    <a class="ap" href="?page={{page.previous_page_number}}">Older Posts
+      <hr class="phr">
+    </a>
+    {% endif %}
+
+  </span>
+
+  <span class="next">
+
+    {% if page.has_next %}
+    <a class="an" href="?page={{page.next_page_number}}">Newer Posts
+      <hr class="nhr">
+    </a>
+    {% endif %}
+
+  </span>
+
+
+
+</div>

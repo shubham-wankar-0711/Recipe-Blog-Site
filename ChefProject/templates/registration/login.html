@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'testApp/base1.html'%}
+
+{% block main_block %}
+
+<div class="container">
+
+  <h2 class="ah1-c">login form</h2>
+  <hr class="ahr1">
+  <hr class="ahr2"><br>
+
+</div>
+
+<header class="clippath-1">
+
+  <div class="container">
+
+    <div class="cdiv">
+
+      <div id="lcol">
+        <img class="logimg" src="https://images.pexels.com/photos/4518685/pexels-photo-4518685.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+      </div>
+
+      <div id="lcol">
+        <form class="logform" method="post">
+          <table>
+            <td>{{ form.as_table }}</td>
+            {% csrf_token %}
+          </table>
+          <input id="logbtn" class="btn btn-lg btn-success" type="submit" name="" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+{% endblock %}

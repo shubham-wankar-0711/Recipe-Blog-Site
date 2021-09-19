@@ -1,0 +1,165 @@
+{% extends 'testApp/base.html'%}
+{% load static %}
+{% load blog_tags %}
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block title_block %} {{post.title}} {% endblock %}
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block home_block %}
+
+<div class="jumbotron" id='j_detail'>
+
+  <h1>{{post.title}}</h1>
+  <hr class="hr1">
+  <p>Published On {{post.publish}} by {{post.author|title}}</p>
+
+</div>
+
+{% endblock %}
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block content_block %}
+
+<img class="img1" src="/media/{{post.image}}" alt=""><br><br><br>
+<h1>{{post.title}}</h1>
+<hr class="style-two">
+<p class="p_content">{{post.category|title}} , {{post.publish}} by {{post.author|title}}</p><br>
+<!-- <p>Wafer caramels pie. Biscuit cupcake dessert apple pie dessert muffin tootsie roll. Jelly danish candy icing jelly cotton candy. Cotton candy toffee jujubes danish marshmallow bear claw donut tart lollipop. Marshmallow apple pie candy caramels. Soufflé caramels caramels donut powder macaroon. Jelly beans cupcake toffee soufflé jelly wafer cake. Gummi bears gingerbread pie. Croissant chocolate cake danish. Chupa chups jelly beans bear claw dragée biscuit.</p> -->
+<!-- <p>Wafer caramels pie. Biscuit cupcake dessert apple pie dessert muffin tootsie roll. Jelly danish candy icing jelly cotton candy. Cotton candy toffee jujubes danish marshmallow bear claw donut tart lollipop. Marshmallow apple pie candy caramels. Soufflé caramels caramels donut powder macaroon. Jelly beans cupcake toffee soufflé jelly wafer cake. Gummi bears gingerbread pie. Croissant chocolate cake danish. Chupa chups jelly beans bear claw dragée biscuit.</p> -->
+<p>{{post.body|linebreaks}}</p><br><br>
+
+<a id="maila" href="/{{post.id}}/share" class="btn btn-warning btn-lg">Share Post By Email</a>
+
+<br>
+<hr><br>
+<h2>Similar Posts</h2><br>
+<hr>
+<br>
+
+
+{% for post in similar_post %}
+
+{% if forloop.counter < 3 %}
+
+<div class="latest">
+  <div class="row">
+    <div class="col-sm" id="ldiv1">
+      <img class="limg" src="/media/{{post.image}}" alt="">
+    </div>
+
+    <div class="col-sm" id="ldiv2">
+      <a class="latesta" href="{{ post.get_absolute_url }}">
+        <h5 class="sh5">{{post.title}}</h5>
+        <hr class="shr1">
+      </a>
+      <p class="sh5">{{post.category|title}} , {{post.publish}}</p>
+    </div>
+  </div>
+</div>
+
+{% endif %}
+{% endfor %}
+
+
+
+<hr>
+{% with comments.count as comments_count %}
+<h2 class="ch2">{{comments_count}} Comment{{comments_count|pluralize}}</h2>
+{% endwith %}
+
+{% if comments %}
+
+{% for comment in comments %}
+<p class="cp1">Comment {{forloop.counter}} By {{comment.name}} On {{comment.created}}</p>
+<hr class="chr1">
+<div class="cb">{{comment.body|linebreaks}}</div>
+{% endfor %}
+
+{% else %}
+<p class="cp2">There Are No Comments Yet....!!!</p>
+
+{% endif %}
+
+{% if csubmit %}
+
+<h2 class="ch2">Comment Added Successfully...!!!</h2>
+
+{% else %}
+
+<h1 id="ch9">Leave a Reply...!!!</h1><br>
+
+<form method="POST">
+
+  <table class="ctable">
+    <tr>
+      <td>{{form.as_table}}</td>
+    </tr>
+    {% csrf_token %}
+  </table><br>
+
+  <input id="cbtn" type="submit" class="btn btn-info btn-lg" value="Submit Comment">
+
+</form>
+
+{% endif %}
+
+{% endblock %}
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+{% block sidebar_block %}
+
+<!-- <img class="img2" src="https://healey.sculptureqode.com/wp-content/uploads/2017/02/hrfzpziovyk-stephanie-liverani.jpg" alt=""><br><br><br>
+<h3>MEET THE CHEF'S</h3>
+<p>We are Christy and Adam and we are passionate about food and cooking. This is our blog where we share our love for all things food and even showcase some of our favourite home-cooked recipes.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lo</p> -->
+
+<img class="img2" src="/media/{{post.user_image}}" alt=""><br><br><br>
+<h3>MEET THE CHEF'S</h3>
+<p>{{post.user_detail|linebreaks}}</p>
+
+
+<br>
+<hr>
+
+<h5 class="lh5">LATEST RECIPES</h5>
+<hr><br>
+{% show_latest_posts %}<br>
+<hr>
+
+<h5 class="lh5">MOST COMMENTED POSTS</h5>
+<hr><br>
+
+{% get_most_commented_posts as most_commented_posts %}
+
+{% for post in most_commented_posts %}
+<div class="latest">
+  <div class="row">
+    <div class="col-sm" id="ldiv1">
+      <img class="limg" src="/media/{{post.image}}" alt="">
+    </div>
+
+    <div class="col-sm" id="ldiv2">
+      <a class="latesta" href="{{ post.get_absolute_url }}">
+        <h5 class="lh6">{{post.title}}</h5>
+        <hr class="lhr">
+
+      </a>
+      <!-- <h5 class="lh6">{{post.title}}</h5> -->
+      <!-- <hr class="lhr"> -->
+      <p class="lpublish">{{post.publish}}</p>
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+
+{% endblock %}
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
