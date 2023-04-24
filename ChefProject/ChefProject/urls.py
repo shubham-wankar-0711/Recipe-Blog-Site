@@ -19,6 +19,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from testApp import views
 from django.conf.urls import url,include
+# from rest_framework_jwt.views import obtain_jwt_token,refresh_jwt_token,verify_jwt_token 
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,6 +40,12 @@ urlpatterns = [
     path('signup/', views.signup_view),
     path('add/', views.add_view),
     path('search/', views.search_view,name='search'),
+    path('api/', include('testApp.API_Service.urls')),
+    # path('get_api_key/', views.get_api_key),
+    
+    # path('auth-jwt/', obtain_jwt_token),
+    # path('auth-jwt-refresh/', refresh_jwt_token), 
+    # path('auth-jwt-verify/', verify_jwt_token),    
 ]
 
 if settings.DEBUG:
