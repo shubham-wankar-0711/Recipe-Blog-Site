@@ -6,24 +6,39 @@ ENDPOINT = 'api/Blog_Post_API/'
 
 # GET METHOD To Get Resources From The SERVER
 
-myToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNCwidXNlcm5hbWUiOiJhYmhpbGFzaCIsImV4cCI6MTcxMjM1MDYwOCwiZW1haWwiOiJhYmhpbGFzaDI4QGdtYWlsLmNvbSIsIm9yaWdfaWF0IjoxNjgyMzUwNjA4fQ.0bqiPvwWXg5i1DVaLXp2kX_T-4bRnFz4Q-5OM5JStBA'
+myToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNiwidXNlcm5hbWUiOiJhYmhpbGFzaCIsImV4cCI6MTcxMjM2NzE5MiwiZW1haWwiOiJhYmhpbGFzaDI4QGdtYWlsLmNvbSIsIm9yaWdfaWF0IjoxNjgyMzY3MTkyfQ.V1uaVJdLQYwTcfPK9uINsGNeSvRm1rc8hRAaZUy4Mbc'
 
 BASE_URL = 'http://127.0.0.1:8000/'
 ENDPOINT = 'api/Blog_Post_API/'
-def get_resource(id=None):
 
+def get_resource(id=None):
   if id is None:
     head = {'Authorization': 'JWT {}'.format(myToken)}    
     headers = {'content-type': 'application/json'}
     response = requests.get(url = BASE_URL+ENDPOINT,headers=head)
-    print(response.json())  
-
+    print()
+    print(response.json())
+    print()
   head = {'Authorization': 'JWT {}'.format(myToken)}  
   headers = {'content-type': 'application/json'}
   response = requests.get(url = BASE_URL+ENDPOINT+str(id),headers=head)
+  print()
   print(response.json())
+  print()
 
-get_resource()
+# def get_resource(id=None):
+#   if id is None:    
+#     response = requests.get(url = BASE_URL+ENDPOINT)    
+#     print()
+#     print(response.json())
+#     print()
+#   response = requests.get(url = BASE_URL+ENDPOINT)    
+#   print()
+#   print(response.json())
+#   print()
+
+
+get_resource(9)
 
 
 
