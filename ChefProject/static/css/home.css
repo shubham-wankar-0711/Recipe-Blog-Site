@@ -8,7 +8,16 @@ body {
   padding-left: 50px;
 }
 
-.fa-facebook-f, .fa-instagram, .fa-twitter {
+.top #api {
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
   font-size: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -34,13 +43,13 @@ a {
   color: #fbc531;
 }
 
-.navbar .navbar-nav .active>.nav-link {
+.navbar .navbar-nav .active > .nav-link {
   color: #fbc531;
 }
 
 .navbar-brand {
   color: rgb(119, 38, 77);
-  font-family: 'Niconne', cursive;
+  font-family: "Niconne", cursive;
   font-size: 40px;
 }
 
@@ -69,7 +78,8 @@ footer .cizgi {
 }
 
 .clippath {
-  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.9)), url(https://www.teahub.io/photos/full/6-63195_food-wallpaper-foods-wallpaper-hd.jpg);
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.9)),
+    url(https://www.teahub.io/photos/full/6-63195_food-wallpaper-foods-wallpaper-hd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
@@ -77,7 +87,8 @@ footer .cizgi {
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.cliph1, .cliph3 {
+.cliph1,
+.cliph3 {
   text-align: center;
   padding-top: 60px;
   color: floralwhite;
@@ -89,7 +100,7 @@ footer .cizgi {
 .cliph3 {
   padding-top: 20px;
   font-size: 40px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .cliph2 {
@@ -98,11 +109,11 @@ footer .cizgi {
   padding-top: 80px;
   padding-left: 540px;
   color: #efd945;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
 }
 
 .cliph1 {
-  font-family: 'Rye', cursive;
+  font-family: "Rye", cursive;
   color: #efd945;
 }
 
@@ -125,7 +136,7 @@ footer .cizgi {
 
 .dh1 {
   font-size: 35px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: rgba(65, 34, 0, 0.6);
 }
 
@@ -146,7 +157,6 @@ footer .cizgi {
   height: 450px;
   border: 3px solid black;
   border-radius: 30px;
-  ;
 }
 
 #header-right {
@@ -200,7 +210,7 @@ footer .cizgi {
 
 .dh1-1 {
   font-size: 35px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: rgba(65, 34, 0, 0.6);
   margin-top: 20px;
 }
@@ -244,7 +254,6 @@ p {
   height: 450px;
   border: 3px solid black;
   border-radius: 30px;
-  ;
 }
 
 #header-right-1 {
@@ -296,7 +305,9 @@ p {
   height: 8vh;
 }
 
-.tops .fa-facebook-f, .fa-instagram, .fa-twitter {
+.tops .fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
   font-size: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -324,7 +335,7 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 .ah1 {
   font-size: 45px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: rgba(65, 34, 0, 0.6);
   text-align: center;
   margin-top: 100px;
@@ -358,7 +369,8 @@ p {
 
 /* -------------------------------------------------------------------------------------- */
 .clippath-1 {
-  background-image: radial-gradient(rgba(46, 45, 45, 0.6), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: radial-gradient(rgba(46, 45, 45, 0.6), rgba(0, 0, 0, 0.8)),
+    url(https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
@@ -368,7 +380,7 @@ p {
 
 .ah1-1-1 {
   font-size: 35px;
-  font-family: 'Dancing Script', monospace;
+  font-family: "Dancing Script", monospace;
   color: rgba(65, 34, 0, 0.6);
   text-align: center;
   margin-top: 30px;
@@ -415,7 +427,7 @@ p {
 .ap-1 {
   text-align: center;
   font-size: 18px;
-  color: floralwhite
+  color: floralwhite;
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -459,7 +471,9 @@ p {
   height: 8vh;
 }
 
-.tops-a .fa-facebook-f, .fa-instagram, .fa-twitter {
+.tops-a .fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
   font-size: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -487,7 +501,7 @@ p {
 /* ------------------------------------------------------------------------------------------------- */
 .ah1-c {
   font-size: 60px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: rgba(65, 34, 0, 0.6);
   text-align: center;
   margin-top: 30px;
@@ -505,7 +519,7 @@ p {
 
 .ah1-1-1-c {
   font-size: 35px;
-  font-family: 'Dancing Script', monospace;
+  font-family: "Dancing Script", monospace;
   color: rgba(65, 34, 0, 0.6);
   text-align: center;
   margin-top: 30px;
@@ -545,7 +559,8 @@ p {
 }
 
 .jlog {
-  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.9)), url(https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-image: radial-gradient(rgba(46, 45, 45, 0.4), rgba(0, 0, 0, 0.9)),
+    url(https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -583,7 +598,8 @@ label {
 
 /* ------------------------------------------------------------------------------------------------------ */
 .clippath-1-s {
-  background-image: radial-gradient(rgba(46, 45, 45, 0.6), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: radial-gradient(rgba(46, 45, 45, 0.6), rgba(0, 0, 0, 0.5)),
+    url(https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;

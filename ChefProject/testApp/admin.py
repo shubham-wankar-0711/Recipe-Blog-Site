@@ -1,7 +1,11 @@
 from django.contrib import admin
 from testApp.models import Post, Comment
 
+
 # Register your models here.
+
+class UserAdmin(admin.ModelAdmin):
+    list_display = ['id','username','email','first_name','last_name']
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -25,3 +29,4 @@ class CommentAdmin(admin.ModelAdmin):
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Comment, CommentAdmin)
+

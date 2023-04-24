@@ -8,6 +8,9 @@ from taggit.models import Tag
 from django.db.models import Count,Q
 from django.contrib.auth.decorators import login_required
 from testApp.forms import Signup_Form,Recipe_Form
+from django.http import HttpResponse
+import json
+import requests
 
 # Create your views here.
 
