@@ -41,7 +41,7 @@ urlpatterns = [
     path('add/', views.add_view),
     path('search/', views.search_view,name='search'),
     path('api/', include('testApp.API_Service.urls')),
-    # path('get_api_key/', views.get_api_key),
+    path('api_signup/', views.api_signup),
     
     # path('auth-jwt/', obtain_jwt_token),
     # path('auth-jwt-refresh/', refresh_jwt_token), 

@@ -204,3 +204,13 @@ def search_view(request):
         return render(request,'testApp/search.html',{'post_list':post_list,'searched':searched})
     else:
         return render(request,'testApp/search.html',{})
+    
+def api_signup(request):
+    form = Signup_Form()
+    if request.method=='POST':
+        form = Signup_Form(request.POST)
+        user = form.save()
+        user.set_password(user.password)
+        user.save()
+        return redirect('/api/auth-jwt/')
+    return render(request,'testApp/signup.html',{'form':form})
